@@ -1,23 +1,27 @@
 .kanjiContainer {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
 
-  .kanjiContainer .kanji {
-    font-size: 3em;
-  }
+.kanjiContainer .kanji {
+  font-size: 3em;
+}
 
-  .btnContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
-  }
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
 
-  .shuffleBtn {
-    position: absolute;
-    left: 50%;
-  }
+.d-none {
+  display: none;
+}
 
-  .d-none {
-    display: none;
-  }
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center button {
+  margin: 0.5em 0;
+}

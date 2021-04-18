@@ -9,7 +9,7 @@ class Yomu extends React.Component {
         this.state = {
             characters: [],
             num: 0,
-            shuffleHide: "shuffleBtn"
+            shuffleHide: "",
         };
     }
 
@@ -54,14 +54,21 @@ class Yomu extends React.Component {
         const { characters, num, shuffleHide } = this.state;
         return (
             <React.Fragment>
-                <button className={shuffleHide} onClick={this.shuffleArray}>Shuffle</button>
                 <div className="btnContainer">
                     <button onClick={this.prevChar}>Prev</button>
+                    <button className={shuffleHide} onClick={this.shuffleArray}>Shuffle</button>
                     <button onClick={this.nextChar}>Next</button>
                 </div>
                 <h3>読めればいい漢字</h3>
                 <div className="kanjiContainer">
                     <h1 className="kanji">{characters[num]}</h1>
+                </div>
+                <div className="center">
+                    <button className="d-none">読み方</button>
+                    <h3>{kanji.yomerebaii.紹介.読み方}</h3>
+                </div>
+                <div className="center">
+                    <button>意味</button>
                 </div>
             </React.Fragment>
         )
