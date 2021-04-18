@@ -9,6 +9,9 @@ library.add(fab);
 const Layout = (props) => {
     return  (
         <React.Fragment>
+            <nav>
+                <Link to="/"><span className="nav-header"><h1>中級の日本語の漢字</h1></span></Link>
+            </nav>
             <div className = "container">
                 {props.children}
             </div>

@@ -1,6 +1,21 @@
 .container {
   display: flex;
   margin: 2em 0;
+  padding: 0 1em;
+}
+
+nav {
+  background-color: #080808;
+  color: #FFFAFA;
+  padding: 0.5em 1em;
+}
+
+nav .nav-header,
+nav a {
+  color: #FFFAFA;
+  text-decoration: none !important;
+  font-size: 18px;
+
 }
 
 footer a {
