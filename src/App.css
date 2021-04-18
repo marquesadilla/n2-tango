@@ -1,5 +1,8 @@
+a {
+  color: inherit;
+}
+
 .container {
-  display: flex;
   margin: 2em 0;
   padding: 0 1em;
 }
@@ -37,4 +40,30 @@ footer a {
 
 .text-center {
   text-align: center;
+}
+
+/* ~~~~~~~~~ Home Buttons ~~~~~~~~~*/
+
+.homeButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.homeButtonContainer button {
+  margin: 0 0.5em;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
 }
