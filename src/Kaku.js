@@ -1,7 +1,5 @@
 import React from 'react';
 import kanji from './kanji';
-import chapter1 from './chapters/chapter1';
-import chapter11 from './chapters/chapter11';
 
 class Kaku extends React.Component {
     constructor(props) {
