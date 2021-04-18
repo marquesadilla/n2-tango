@@ -15,7 +15,7 @@ class Home extends React.Component {
         return(
             <React.Fragment>
                 <div className="homeButtonContainer">
-                    <button className="btn from-left">書くのを覚える</button>
+                    <Link to={`/書くのを覚える`}><button className="btn from-left">書くのを覚える</button></Link>
                     <Link to={`/読めればいい`}><button className="btn from-right">読めればいい</button></Link>
                 </div>
             </React.Fragment>
