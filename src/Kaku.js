@@ -21,7 +21,6 @@ class Kaku extends React.Component {
 
     shuffleArray = () => {
         var arr = this.state.characters;
-        console.log(arr);
         var i, j, temp;
         for (i = arr.length - 1; i > 0; i--) {
             j = Math.floor(Math.random() * (i + 1));
@@ -29,9 +28,7 @@ class Kaku extends React.Component {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-        console.log(arr);
         this.setState({ characters: arr });
-        console.log("shuffled");
     }
 
     render() {

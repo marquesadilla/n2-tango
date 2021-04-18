@@ -1,7 +1,6 @@
 import React from 'react';
 import kanji from './kanji';
-import chapter1 from './chapters/chapter1';
-import chapter11 from './chapters/chapter11';
+import './kanji.css';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -9,6 +8,8 @@ class Yomu extends React.Component {
 
         this.state = {
             characters: [],
+            num: 0,
+            shuffleHide: "shuffleBtn"
         };
     }
 
@@ -21,7 +22,6 @@ class Yomu extends React.Component {
 
     shuffleArray = () => {
         var arr = this.state.characters;
-        console.log(arr);
         var i, j, temp;
         for (i = arr.length - 1; i > 0; i--) {
             j = Math.floor(Math.random() * (i + 1));
@@ -29,22 +29,40 @@ class Yomu extends React.Component {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-        console.log(arr);
-        this.setState({ characters: arr });
-        console.log("shuffled");
+        this.setState({ characters: arr, shuffleHide: "d-none" });
+    }
+
+    prevChar = () => {
+        if(this.state.num === 0) {
+            this.setState({ num: this.state.characters.length - 1 });
+        }
+        else{
+            this.setState({ num: this.state.num - 1 });
+        }
+    }
+
+    nextChar = () => {
+        if (this.state.num === this.state.characters.length - 1) {
+            this.setState({ num: 0 });
+        }
+        else {
+            this.setState({ num: this.state.num + 1 });
+        }
     }
 
     render() {
-        const { characters } = this.state;
+        const { characters, num, shuffleHide } = this.state;
         return (
             <React.Fragment>
-                <h1>読めればいい漢字</h1>
-                <button onClick={this.shuffleArray}>Shuffle</button>
-                <ul>
-                    {characters.map(function(name, index){
-                        return <li key={ index }>{name}</li>
-                    })}
-                </ul>
+                <button className={shuffleHide} onClick={this.shuffleArray}>Shuffle</button>
+                <div className="btnContainer">
+                    <button onClick={this.prevChar}>Prev</button>
+                    <button onClick={this.nextChar}>Next</button>
+                </div>
+                <h3>読めればいい漢字</h3>
+                <div className="kanjiContainer">
+                    <h1 className="kanji">{characters[num]}</h1>
+                </div>
             </React.Fragment>
         )
     }
