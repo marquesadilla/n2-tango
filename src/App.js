@@ -1,13 +1,19 @@
 import React from 'react';
-import { BrowserRouer as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Layout from './Layout';
+import Home from './Home';
 import './App.css';
 
 const App = () => {
   return(
-    <Layout>
-      <h1>test</h1>
-    </Layout>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route path ="/" exact component={Home} />
+          <Route render={() => <h1>404 Not Found</h1>} />
+        </Switch>
+      </Layout>
+    </Router>
   );
 }
 
