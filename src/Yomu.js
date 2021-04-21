@@ -7,7 +7,7 @@ class Yomu extends React.Component {
         super (props);
 
         this.state = {
-            characters: [],
+            characters: ["紹介"],
             num: 0,
             shuffleHide: "",
             yomikataButton: "",
@@ -22,6 +22,7 @@ class Yomu extends React.Component {
     componentDidMount(){
         this.setState(state => {
             const characters = this.state.characters.concat(Object.keys(kanji.yomerebaii));
+            characters.splice(0, 1)
             this.setState({ characters: characters });
         })
     }
@@ -73,7 +74,7 @@ class Yomu extends React.Component {
 
     render() {
         const { characters, num, shuffleHide, yomikataButton, yomikataClass, imiButton, imiClass, prevDis, nextDis } = this.state;
-        let test = "紹介";
+
         return (
             <React.Fragment>
                 <div className="btnContainer">
@@ -87,14 +88,14 @@ class Yomu extends React.Component {
                 </div>
                 <div className="center">
                     <button className={yomikataButton} onClick={this.yomikata}>読み方</button>
-                    <h3 className={yomikataClass}> {kanji.yomerebaii["紹介"].読み方}</h3>
+                    <h3 className={yomikataClass}> {kanji.yomerebaii[characters[num]].読み方}</h3>
                 </div>
                 <div className="center">
                     <button onClick={this.imi} className={imiButton}>意味</button>
-                    <h3 className={imiClass}>{kanji.yomerebaii[test].form}</h3>
+                    <h3 className={imiClass}>{kanji.yomerebaii[characters[num]].form}</h3>
                 </div>
                 <div className="center">
-                    <h3 className={imiClass}>{kanji.yomerebaii["紹介"].意味}</h3>
+                    <h3 className={imiClass}>{kanji.yomerebaii[characters[num]].意味}</h3>
                 </div>
             </React.Fragment>
         )
