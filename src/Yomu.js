@@ -13,7 +13,7 @@ class Yomu extends React.Component {
             yomikataButton: "",
             yomikataClass: "d-none",
             imiButton: "",
-            imiClass: "d-none",
+            imiClass: "d-none imi",
             prevDis: true,
             nextDis: false,
         };
@@ -22,8 +22,9 @@ class Yomu extends React.Component {
     componentDidMount(){
         this.setState(state => {
             const characters = this.state.characters.concat(Object.keys(kanji.yomerebaii));
-            characters.splice(0, 1)
+            characters.splice(0, 1);
             this.setState({ characters: characters });
+            //this.setState({ num: characters.length-1 }); // DELETE LATER
         })
     }
 
@@ -48,7 +49,7 @@ class Yomu extends React.Component {
             this.setState({ prevDis: true });
         }
 
-        this.setState({ yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none" });
+        this.setState({ yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none imi" });
     }
 
     nextChar = () => {
@@ -61,7 +62,7 @@ class Yomu extends React.Component {
         }
 
 
-        this.setState({ yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none" });
+        this.setState({ yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none imi" });
     }
 
     yomikata = () => {
@@ -69,7 +70,7 @@ class Yomu extends React.Component {
     }
 
     imi = () => {
-        this.setState({ imiButton: "d-none", imiClass: "" });
+        this.setState({ imiButton: "d-none", imiClass: "imi" });
     }
 
     render() {
