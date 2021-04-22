@@ -89,7 +89,7 @@ class Yomu extends React.Component {
                 </div>
                 <div className="center">
                     <button className={yomikataButton} onClick={this.yomikata}>読み方</button>
-                    <h3 className={yomikataClass}> {kanji.yomerebaii[characters[num]].読み方}</h3>
+                    <h2 className={yomikataClass}> {kanji.yomerebaii[characters[num]].読み方}</h2>
                 </div>
                 <div className="center">
                     <button onClick={this.imi} className={imiButton}>意味</button>
