@@ -24,7 +24,7 @@ class Yomu extends React.Component {
             const characters = this.state.characters.concat(Object.keys(kanji.yomerebaii));
             characters.splice(0, 1);
             this.setState({ characters: characters });
-            this.setState({ num: characters.length-1 }); // DELETE LATER
+            //this.setState({ num: characters.length-1 }); // DELETE LATER
         })
     }
 
