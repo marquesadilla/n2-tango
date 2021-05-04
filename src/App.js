@@ -12,7 +12,7 @@ const App = () => {
       <Layout>
         <Switch>
           <Route path ="/" exact component={Home} />
-          <Route path="/読めればいい" component={Yomu} />
+          <Route path="/kanji" component={Yomu} />
           <Route path="/書くのを覚える" component={Kaku} />
           <Route render={() => <h1>404 Not Found</h1>} />
         </Switch>
