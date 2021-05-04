@@ -1,28 +1,63 @@
 import React from 'react';
 import kanji from './kanji';
 import './kanji.css';
+import chapter2 from './chapters/chapter2';
+import chapter3 from './chapters/chapter3';
 
 class Yomu extends React.Component {
     constructor(props) {
         super (props);
+        console.log(this.props);
 
-        this.state = {
-            characters: Object.keys(kanji.yomerebaii),
-            num: 0,
-            shuffleHide: "",
-            yomikataButton: "",
-            yomikataClass: "d-none",
-            imiButton: "",
-            imiClass: "d-none imi",
-            prevDis: true,
-            nextDis: false,
-        };
+        const params = new URLSearchParams(props.location.serach);
+        var test = props.location.search;
+        console.log(test);
+        if (test==='?set=kanji-yomerebaii'){
+            this.state={
+                characters: Object.keys(kanji.yomerebaii),
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            }
+        }
+        else if (test==='?set=ch3-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter3.yomerebaii),
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else {
+            this.state = {
+                characters: Object.keys(chapter2.yomerebaii),
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        
     }
 
     componentDidMount(){
         this.setState(state => {
-            //this.setState({ num: this.state.characters.length-1 }); // DELETE LATER
-        })
+            this.setState({ num: this.state.characters.length-1 }); // DELETE LATER
+        });
     }
 
     shuffleArray = () => {
