@@ -7,7 +7,7 @@ class Yomu extends React.Component {
         super (props);
 
         this.state = {
-            characters: ["紹介"],
+            characters: Object.keys(kanji.yomerebaii),
             num: 0,
             shuffleHide: "",
             yomikataButton: "",
@@ -21,10 +21,7 @@ class Yomu extends React.Component {
 
     componentDidMount(){
         this.setState(state => {
-            const characters = this.state.characters.concat(Object.keys(kanji.yomerebaii));
-            characters.splice(0, 1);
-            this.setState({ characters: characters });
-            this.setState({ num: characters.length-1 }); // DELETE LATER
+            //this.setState({ num: this.state.characters.length-1 }); // DELETE LATER
         })
     }
 
