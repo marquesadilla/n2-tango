@@ -136,19 +136,19 @@ class Yomu extends React.Component {
 
         const formSet = () => {
             if (set==="yomu") {
-                return kanji.yomerebaii[characters[num]].読み方.form
+                return kanji.yomerebaii[characters[num]].form
             }
             else if (set==="kaku") {
-                return kanji.kaku[characters[num]].読み方.form
+                return kanji.kaku[characters[num]].form
             }
         }
 
         const imiSet = () => {
             if (set==="yomu") {
-                return kanji.yomerebaii[characters[num]].読み方.意味
+                return kanji.yomerebaii[characters[num]].意味
             }
             else if (set==="kaku") {
-                return kanji.kaku[characters[num]].読み方.意味
+                return kanji.kaku[characters[num]].意味
             }
         }
 

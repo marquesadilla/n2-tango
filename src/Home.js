@@ -15,7 +15,7 @@ class Home extends React.Component {
     clickedKanjiSet = (event) => {
         event.preventDefault();
         this.setState({ kanjiSetClick: event.target.value });
-        const waitSecs = 100 // 0.25 seconds
+        const waitSecs = 100 // 0.1 seconds
         setTimeout(() => {
             window.location.href=`/kanji?set=${event.target.value}`;
         },waitSecs);
