@@ -4,7 +4,7 @@ const kanji = {
         初めて: { 読み方: ['はじめて'], form: '副詞、の形容詞', 意味: "for the first time" },
         石山: { 読み方: ['いしやま'], form: '名字', 意味: "stone mountain" },
         失礼: { 読み方: ['しつれい'], form: 'スル動詞、ナ形容詞', 意味: "discourtesy; impoliteness" },
-        
+        申す: { 読み方: ['もうす'], form: '五段動詞、謙譲語', 意味: "humble form of 言う" },
 
     },
 
