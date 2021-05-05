@@ -50,18 +50,17 @@ footer a {
 }
 
 .homeButtonContainer button {
-  margin: 0 0.5em;
+  margin: 0.5em 0.5em;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .btn {		
 	position: relative;	
-	padding: 1.4rem 4.2rem;
-	padding-right: 3.1rem;
+	padding: 1.4rem 2rem;
 	font-size: 1.4rem;
 	color: var(--inv);
-	letter-spacing: 1.1rem;
+	letter-spacing: 0.5rem;
 	text-transform: uppercase;
 	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;

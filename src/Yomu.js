@@ -1,6 +1,7 @@
 import React from 'react';
 import kanji from './kanji';
 import './kanji.css';
+import chapter1 from './chapters/chapter1';
 import chapter2 from './chapters/chapter2';
 import chapter3 from './chapters/chapter3';
 
@@ -39,6 +40,34 @@ class Yomu extends React.Component {
                 prevDis: true,
                 nextDis: false,
             }
+        }
+        else if (test==='?set=ch1-kaku') {
+            this.state = {
+                characters: Object.keys(chapter1.kaku),
+                set: "kaku",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch1-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter1.yomerebaii),
+                set: "yomu",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
         }
         else if (test==='?set=ch3-yomerebaii') {
             this.state = {
@@ -86,7 +115,7 @@ class Yomu extends React.Component {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-        this.setState({ characters: arr, shuffleHide: "d-none" });
+        this.setState({ characters: arr, shuffleHide: "d-none", yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none imi" });
     }
 
     prevChar = () => {
