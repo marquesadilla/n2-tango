@@ -26,7 +26,7 @@ class Home extends React.Component {
         return(
             <React.Fragment>
                 <div className="homeButtonContainer">
-                    <Link to={`/書くのを覚える`}><button className="btn from-left">書くのを覚える</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="kanji-kaku" className="btn from-left">書くのを覚える</button></Link>
                     <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="kanji-yomerebaii" className="btn from-right">読めればいい</button></Link>
                 </div>
                 <div className="homeButtonContainer">

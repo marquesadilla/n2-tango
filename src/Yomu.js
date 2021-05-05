@@ -15,6 +15,21 @@ class Yomu extends React.Component {
         if (test==='?set=kanji-yomerebaii'){
             this.state={
                 characters: Object.keys(kanji.yomerebaii),
+                set: "yomu",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            }
+        }
+        else if (test==='?set=kanji-kaku'){
+            this.state={
+                characters: Object.keys(kanji.kaku),
+                set: "kaku",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -28,6 +43,7 @@ class Yomu extends React.Component {
         else if (test==='?set=ch3-yomerebaii') {
             this.state = {
                 characters: Object.keys(chapter3.yomerebaii),
+                set: "yomu",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -41,6 +57,7 @@ class Yomu extends React.Component {
         else {
             this.state = {
                 characters: Object.keys(chapter2.yomerebaii),
+                set: "yomu",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -56,7 +73,7 @@ class Yomu extends React.Component {
 
     componentDidMount(){
         this.setState(state => {
-            this.setState({ num: this.state.characters.length-1 }); // DELETE LATER
+            //this.setState({ num: this.state.characters.length-1 }); // DELETE LATER
         });
     }
 
@@ -106,7 +123,34 @@ class Yomu extends React.Component {
     }
 
     render() {
-        const { characters, num, shuffleHide, yomikataButton, yomikataClass, imiButton, imiClass, prevDis, nextDis } = this.state;
+        const { characters, set, num, shuffleHide, yomikataButton, yomikataClass, imiButton, imiClass, prevDis, nextDis } = this.state;
+
+        const setChooser = () => {
+            if (set==="yomu") {
+                return kanji.yomerebaii[characters[num]].読み方
+            }
+            else if (set==="kaku") {
+                return kanji.kaku[characters[num]].読み方
+            }
+        }
+
+        const formSet = () => {
+            if (set==="yomu") {
+                return kanji.yomerebaii[characters[num]].読み方.form
+            }
+            else if (set==="kaku") {
+                return kanji.kaku[characters[num]].読み方.form
+            }
+        }
+
+        const imiSet = () => {
+            if (set==="yomu") {
+                return kanji.yomerebaii[characters[num]].読み方.意味
+            }
+            else if (set==="kaku") {
+                return kanji.kaku[characters[num]].読み方.意味
+            }
+        }
 
         return (
             <React.Fragment>
@@ -121,14 +165,14 @@ class Yomu extends React.Component {
                 </div>
                 <div className="center">
                     <button className={yomikataButton} onClick={this.yomikata}>読み方</button>
-                    <h2 className={yomikataClass}> {kanji.yomerebaii[characters[num]].読み方}</h2>
+                    <h2 className={yomikataClass}> {setChooser()}</h2>
                 </div>
                 <div className="center">
                     <button onClick={this.imi} className={imiButton}>意味</button>
-                    <h3 className={imiClass}>{kanji.yomerebaii[characters[num]].form}</h3>
+                    <h3 className={imiClass}>{formSet()}</h3>
                 </div>
                 <div className="center">
-                    <h3 className={imiClass}>{kanji.yomerebaii[characters[num]].意味}</h3>
+                    <h3 className={imiClass}>{imiSet()}</h3>
                 </div>
             </React.Fragment>
         )
