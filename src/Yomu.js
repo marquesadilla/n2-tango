@@ -18,6 +18,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(kanji.yomerebaii),
                 set: "yomu",
+                setName: "読めればいい漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -32,6 +33,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(kanji.kaku),
                 set: "kaku",
+                setName: "書くのを覚える漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -46,6 +48,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter1.kaku),
                 set: "kaku",
+                setName: "第一課 読書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -60,6 +63,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter1.yomerebaii),
                 set: "yomu",
+                setName: "第一課 読めればいい漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -74,6 +78,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter2.kaku),
                 set: "kaku",
+                setName: "第二課 読書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -88,6 +93,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter2.yomerebaii),
                 set: "yomu",
+                setName: "第二課 読めればいい漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -102,6 +108,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter3.kaku),
                 set: "kaku",
+                setName: "第三課 読書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -116,6 +123,22 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter3.yomerebaii),
                 set: "yomu",
+                setName: "第三課 読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch4-kaku') {
+            this.state = {
+                characters: Object.keys(chapter4.kaku),
+                set: "kaku",
+                setName: "第四課 読書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -130,6 +153,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter4.yomerebaii),
                 set: "yomu",
+                setName: "第四課 読めればいい漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -209,7 +233,7 @@ class Yomu extends React.Component {
     }
 
     render() {
-        const { characters, set, num, shuffleHide, yomikataButton, yomikataClass, imiButton, imiClass, prevDis, nextDis } = this.state;
+        const { characters, set, setName, num, shuffleHide, yomikataButton, yomikataClass, imiButton, imiClass, prevDis, nextDis } = this.state;
 
         const setChooser = () => {
             if (set==="yomu") {
@@ -245,7 +269,7 @@ class Yomu extends React.Component {
                     <button className={shuffleHide} onClick={this.shuffleArray}>Shuffle</button>
                     <button onClick={this.nextChar} disabled={nextDis}>Next</button>
                 </div>
-                <h3>読めればいい漢字</h3>
+                <h3>{setName}</h3>
                 <div className="kanjiContainer">
                     <h1 className="kanji">{characters[num]}</h1>
                 </div>
