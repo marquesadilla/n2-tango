@@ -6,6 +6,7 @@ import chapter2 from './chapters/chapter2';
 import chapter3 from './chapters/chapter3';
 import chapter4 from './chapters/chapter4';
 import chapter5 from './chapters/chapter5';
+import chapter6 from './chapters/chapter6';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -79,7 +80,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter2.kaku),
                 set: "kaku",
-                setName: "第二課 読書くのを漢字",
+                setName: "第二課 書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -109,7 +110,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter3.kaku),
                 set: "kaku",
-                setName: "第三課 読書くのを漢字",
+                setName: "第三課 書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -139,7 +140,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter4.kaku),
                 set: "kaku",
-                setName: "第四課 読書くのを漢字",
+                setName: "第四課 書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -169,7 +170,7 @@ class Yomu extends React.Component {
             this.state = {
                 characters: Object.keys(chapter5.kaku),
                 set: "kaku",
-                setName: "第五課 読書くのを漢字",
+                setName: "第五課 書くのを漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -195,10 +196,26 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
-        else {
+        else if (test==='?set=ch6-kaku') {
             this.state = {
-                characters: Object.keys(chapter2.yomerebaii),
+                characters: Object.keys(chapter6.kaku),
+                set: "kaku",
+                setName: "第六課 書くのを漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch6-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter6.yomerebaii),
                 set: "yomu",
+                setName: "第六課 読めればいい漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
