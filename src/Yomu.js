@@ -8,6 +8,7 @@ import chapter4 from './chapters/chapter4';
 import chapter5 from './chapters/chapter5';
 import chapter6 from './chapters/chapter6';
 import chapter7 from './chapters/chapter7';
+import chapter8 from './chapters/chapter8';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -247,6 +248,36 @@ class Yomu extends React.Component {
                 characters: Object.keys(chapter7.yomerebaii),
                 set: "yomu",
                 setName: "第七課 読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch8-kaku') {
+            this.state = {
+                characters: Object.keys(chapter8.kaku),
+                set: "kaku",
+                setName: "第八課 書くのを漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch8-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter8.yomerebaii),
+                set: "yomu",
+                setName: "第八課 読めればいい漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
