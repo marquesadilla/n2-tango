@@ -9,6 +9,10 @@ import chapter5 from './chapters/chapter5';
 import chapter6 from './chapters/chapter6';
 import chapter7 from './chapters/chapter7';
 import chapter8 from './chapters/chapter8';
+import chapter9 from './chapters/chapter9';
+import chapter10 from './chapters/chapter10';
+import chapter11 from './chapters/chapter11';
+import chapter12 from'./chapters/chapter12';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -288,7 +292,126 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
-        
+        else if (test==='?set=ch9-kaku') {
+            this.state = {
+                characters: Object.keys(chapter9.kaku),
+                set: "kaku",
+                setName: "第九課 書くのを漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch9-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter9.yomerebaii),
+                set: "yomu",
+                setName: "第九課 読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch10-kaku') {
+            this.state = {
+                characters: Object.keys(chapter10.kaku),
+                set: "kaku",
+                setName: "第十課 書くのを漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch10-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter10.yomerebaii),
+                set: "yomu",
+                setName: "第十課 読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch11-kaku') {
+            this.state = {
+                characters: Object.keys(chapter11.kaku),
+                set: "kaku",
+                setName: "第十一課 書くのを漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch11-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter11.yomerebaii),
+                set: "yomu",
+                setName: "第十一課 読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch12-kaku') {
+            this.state = {
+                characters: Object.keys(chapter12.kaku),
+                set: "kaku",
+                setName: "第十二課 書くのを漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=ch12-yomerebaii') {
+            this.state = {
+                characters: Object.keys(chapter12.yomerebaii),
+                set: "yomu",
+                setName: "第十二課 読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
     }
 
     componentDidMount(){

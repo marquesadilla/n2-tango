@@ -67,6 +67,26 @@ class Home extends React.Component {
                     <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="ch8-kaku" className="btn from-left">第八課書く</button></Link>
                     <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch8-yomerebaii" className="btn from-left">第八課読む</button></Link>
                 </div>
+
+                <div className="homeButtonContainer">
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch9-kaku" className="btn from-left">第九課書く</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch9-yomerebaii" className="btn from-left">第九課読む</button></Link>
+                </div>
+
+                <div className="homeButtonContainer">
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch10-kaku" className="btn from-left">第十課書く</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch10-yomerebaii" className="btn from-left">第十課読む</button></Link>
+                </div>
+
+                <div className="homeButtonContainer">
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch11-kaku" className="btn from-left">第十一課書く</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch11-yomerebaii" className="btn from-left">第十一課読む</button></Link>
+                </div>
+
+                <div className="homeButtonContainer">
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="ch12-kaku" className="btn from-left">第十二課書く</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="ch12-yomerebaii" className="btn from-left">第十二課読む</button></Link>
+                </div>
             </React.Fragment>
         )
     }
