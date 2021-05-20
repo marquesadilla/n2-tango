@@ -429,7 +429,10 @@ class Yomu extends React.Component {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-        this.setState({ characters: arr, shuffleHide: "d-none", yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none imi" });
+        if (this.state.num === this.state.characters.length - 1) {
+            this.setState({ nextDis: false });
+        }
+        this.setState({ characters: arr, shuffleHide: "d-none", yomikataButton: "", yomikataClass: "d-none", imiButton: "", imiClass: "d-none imi", num: 0, prevDis: true });
     }
 
     prevChar = () => {
@@ -450,7 +453,7 @@ class Yomu extends React.Component {
             this.setState({ prevDis: false });
         }
         if (this.state.num === this.state.characters.length - 2) {
-            this.setState({ nextDis: true });
+            this.setState({ nextDis: true, shuffleHide: "" });
         }
 
 
