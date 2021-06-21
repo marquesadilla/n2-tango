@@ -55,7 +55,7 @@ const chapter4 = {
         皆さん:{ 読み方: ['みなさん'], form: '名詞', 意味: "all of you; everyone" },
         求める:{ 読み方: ['もとめる'], form: '一段動詞、他動詞', 意味: "to request; to ask for" },
         偶然:{ 読み方: ['ぐうぜん'], form: 'ナ形容詞、ノ形容詞、副詞', 意味: "chance; coincidence; by chance" },
-        暖かい:{ 読み方: ['あたｔかい'], form: 'イ形容詞', 意味: "pleasantly warm [with reference to weather]" },
+        暖かい:{ 読み方: ['あたたかい'], form: 'イ形容詞', 意味: "pleasantly warm [with reference to weather]" },
         紅葉:{ 読み方: ['こうよう'], form: '名詞、スル動詞', 意味: "fall colors (of leaves)" },
         面白い:{ 読み方: ['おもしろい'], form: 'イ形容詞', 意味: "interesting, amusing" },
         経験:{ 読み方: ['けいけん'], form: '名詞、する動詞', 意味: "experience" },

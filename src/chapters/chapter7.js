@@ -52,7 +52,7 @@ const chapter7 = {
         山手線: { 読み方: ['やまのてせん'], form: '名詞', 意味: "[name of a train line]" },
         京浜東北線: { 読み方: ['けいひんとうほくせん'], form: '名詞', 意味: "[name of a train line]" },
         快速: { 読み方: ['かいそく'], form: '名詞', 意味: "rapid train or bus" },
-        改札口: { 読み方: ['かいさつぐち'], form: '名詞', 意味: "ticket" },
+        改札口: { 読み方: ['かいさつぐち'], form: '名詞', 意味: "ticket barrier; ticket gate" },
         黒沢: { 読み方: ['くろさわ'], form: '名字', 意味: "black + brilliance" },
         監督: { 読み方: ['かんとく'], form: '名詞', 意味: "movie director" },
         徹夜: { 読み方: ['てつや'], form: '名詞、スル動詞、ノ形容詞', 意味: "staying up all night" },
