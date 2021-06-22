@@ -13,7 +13,7 @@ const chapter2 = {
         にじはん: { 読み方: ['二時半'], form: '時', 意味: "2:30" },
         むずかしい: { 読み方: ['難しい'], form: 'イ形容詞', 意味: "difficult" },
         たいへん: { 読み方: ['大変'], form: 'ナ形容詞', 意味: "difficult; hard" },
-        外: { 読み方: ['そと'], form: '名詞', 意味: "outside" },
+        そと: { 読み方: ['外'], form: '名詞', 意味: "outside" },
         おおあめ: { 読み方: ['大雨'], form: '名詞', 意味: "heavy rain" },
         いそぐ: { 読み方: ['急ぐ'], form: '五段動詞、自動詞、他動詞', 意味: "to hurry" },
         さきに: { 読み方: ['先に'], form: '副詞', 意味: "ahead (of someone); ahead (of time)" },

@@ -37,7 +37,7 @@ const chapter7 = {
         かんしん: { 読み方: ['関心を集める'], form: '表現', 意味: "to gain interest" },
         でんとうてき: { 読み方: ['伝統的'], form: 'ナ形容詞', 意味: "traditional" },
         さいきん: { 読み方: ['最近'], form: '名詞、ノ形容詞、副詞', 意味: "recently" },
-        しゅっしん: { 読み方: ['主審'], form: '名詞、ノ形容詞', 意味: "one's home" },
+        しゅっしん: { 読み方: ['出身'], form: '名詞、ノ形容詞', 意味: "one's home" },
     },
 
     yomerebaii: {

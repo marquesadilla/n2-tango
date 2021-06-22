@@ -17,7 +17,7 @@ const chapter3 = {
         ちがう: { 読み方: ['違う'], form: '五段動詞、自動詞', 意味: "to differ (from); to not match the correct answer" },
         おこなう: { 読み方: ['行う'], form: '五段動詞、他動詞', 意味: "to carry out; to conduct [usually used in written language]" },
         もくてき: { 読み方: ['目的'], form: '名詞', 意味: "purpose; goal" },
-        いがい: { 読み方: ['意外'], form: '名詞、副詞', 意味: "other than; with the exception of" },
+        いがい: { 読み方: ['以外'], form: '名詞、副詞', 意味: "other than; with the exception of" },
         たすける: { 読み方: ['助ける'], form: '一段動詞、他動詞', 意味: "to help; to save" },
         にゅうがく: { 読み方: ['入学'], form: '名詞、スル動詞', 意味: "entry to school or university" },
         ぜんぶ: { 読み方: ['全部'], form: '名詞、ノ形容詞、副詞', 意味: "all; entire; whole" },
