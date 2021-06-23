@@ -42,7 +42,7 @@ const chapter6 = {
         腰: { 読み方: ['こし'], form: '名詞', 意味: "lower back; waist; [腰をかける = 椅子に座る]" },
         握る: { 読み方: ['にぎる'], form: '五段動詞、他動詞', 意味: "to make sushi by hand" },
         並: { 読み方: ['なみ'], form: 'ノ形容詞、名詞', 意味: "(sushi serving of) medium quality/price" },
-        召し上がる: { 読み方: ['召し上がる'], form: '五段動詞、他動詞、尊敬語', 意味: "[honorific form of 食べる・飲む]" },
+        召し上がる: { 読み方: ['めしあがｒ'], form: '五段動詞、他動詞、尊敬語', 意味: "[honorific form of 食べる・飲む]" },
         参る: { 読み方: ['まいる'], form: '五段動詞、自動詞、謙譲語', 意味: "[humble form of 行く・来る]" },
         請求書: { 読み方: ['せいきゅうしょ'], form: '名詞', 意味: "bill; invoice" },
         健一: { 読み方: ['けんいち'], form: '男の名前', 意味: "health + one" },
