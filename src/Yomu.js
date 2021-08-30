@@ -1,8 +1,8 @@
 import React from 'react';
 import kanji from './kanji';
 import './kanji.css';
-import chapter1 from './chapters/chapter1';
-import chapter2 from './chapters/chapter2';
+import unit1_1 from './chapters/unit1_1';
+import unit1_2 from './chapters/unit1_2';
 import chapter3 from './chapters/chapter3';
 import chapter4 from './chapters/chapter4';
 import chapter5 from './chapters/chapter5';
@@ -10,9 +10,6 @@ import chapter6 from './chapters/chapter6';
 import chapter7 from './chapters/chapter7';
 import chapter8 from './chapters/chapter8';
 import chapter9 from './chapters/chapter9';
-import chapter10 from './chapters/chapter10';
-import chapter11 from './chapters/chapter11';
-import chapter12 from'./chapters/chapter12';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -26,7 +23,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(kanji.tango),
                 set: "tango",
-                setName: "単語",
+                setName: "全ての単語",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -67,11 +64,11 @@ class Yomu extends React.Component {
                 nextDis: false,
             }
         }
-        else if (test==='?set=kanji-kaku'){
+        else if (test==='?set=u1-tango-1'){
             this.state={
-                characters: Object.keys(kanji.kaku),
-                set: "kaku",
-                setName: "書くのを覚える漢字",
+                characters: Object.keys(unit1_1.tango),
+                set: "tango",
+                setName: "U1 単語 1",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -82,11 +79,11 @@ class Yomu extends React.Component {
                 nextDis: false,
             }
         }
-        else if (test==='?set=ch1-kaku') {
+        else if (test==='?set=u1-kaku-1') {
             this.state = {
-                characters: Object.keys(chapter1.kaku),
+                characters: Object.keys(unit1_1.kaku),
                 set: "kaku",
-                setName: "第一課 読書くのを漢字",
+                setName: "U1_1 書き方を覚える漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -97,11 +94,11 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
-        else if (test==='?set=ch1-yomerebaii') {
+        else if (test==='?set=u1-yomu-1') {
             this.state = {
-                characters: Object.keys(chapter1.yomerebaii),
+                characters: Object.keys(unit1_1.yomerebaii),
                 set: "yomu",
-                setName: "第一課 読めればいい漢字",
+                setName: "U1_1 読み方を覚える漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -112,11 +109,11 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
-        else if (test==='?set=ch2-kaku') {
-            this.state = {
-                characters: Object.keys(chapter2.kaku),
-                set: "kaku",
-                setName: "第二課 書くのを漢字",
+        else if (test==='?set=u1-tango-2'){
+            this.state={
+                characters: Object.keys(unit1_2.tango),
+                set: "tango",
+                setName: "U1 単語 2",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -127,321 +124,7 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
-        else if (test==='?set=ch2-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter2.yomerebaii),
-                set: "yomu",
-                setName: "第二課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch3-kaku') {
-            this.state = {
-                characters: Object.keys(chapter3.kaku),
-                set: "kaku",
-                setName: "第三課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch3-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter3.yomerebaii),
-                set: "yomu",
-                setName: "第三課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch4-kaku') {
-            this.state = {
-                characters: Object.keys(chapter4.kaku),
-                set: "kaku",
-                setName: "第四課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch4-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter4.yomerebaii),
-                set: "yomu",
-                setName: "第四課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch5-kaku') {
-            this.state = {
-                characters: Object.keys(chapter5.kaku),
-                set: "kaku",
-                setName: "第五課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch5-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter5.yomerebaii),
-                set: "yomu",
-                setName: "第五課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch6-kaku') {
-            this.state = {
-                characters: Object.keys(chapter6.kaku),
-                set: "kaku",
-                setName: "第六課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch6-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter6.yomerebaii),
-                set: "yomu",
-                setName: "第六課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch7-kaku') {
-            this.state = {
-                characters: Object.keys(chapter7.kaku),
-                set: "kaku",
-                setName: "第七課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch7-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter7.yomerebaii),
-                set: "yomu",
-                setName: "第七課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch8-kaku') {
-            this.state = {
-                characters: Object.keys(chapter8.kaku),
-                set: "kaku",
-                setName: "第八課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch8-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter8.yomerebaii),
-                set: "yomu",
-                setName: "第八課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch9-kaku') {
-            this.state = {
-                characters: Object.keys(chapter9.kaku),
-                set: "kaku",
-                setName: "第九課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch9-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter9.yomerebaii),
-                set: "yomu",
-                setName: "第九課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch10-kaku') {
-            this.state = {
-                characters: Object.keys(chapter10.kaku),
-                set: "kaku",
-                setName: "第十課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch10-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter10.yomerebaii),
-                set: "yomu",
-                setName: "第十課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch11-kaku') {
-            this.state = {
-                characters: Object.keys(chapter11.kaku),
-                set: "kaku",
-                setName: "第十一課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch11-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter11.yomerebaii),
-                set: "yomu",
-                setName: "第十一課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch12-kaku') {
-            this.state = {
-                characters: Object.keys(chapter12.kaku),
-                set: "kaku",
-                setName: "第十二課 書くのを漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
-        else if (test==='?set=ch12-yomerebaii') {
-            this.state = {
-                characters: Object.keys(chapter12.yomerebaii),
-                set: "yomu",
-                setName: "第十二課 読めればいい漢字",
-                num: 0,
-                shuffleHide: "",
-                yomikataButton: "",
-                yomikataClass: "d-none",
-                imiButton: "",
-                imiClass: "d-none imi",
-                prevDis: true,
-                nextDis: false,
-            };
-        }
+
     }
 
     componentDidMount(){
