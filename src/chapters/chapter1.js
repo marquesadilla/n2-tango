@@ -1,4 +1,8 @@
 const chapter1 = {
+    tango: {
+        
+    },
+
     kaku: {
 
         はじめて: { 読み方: ['初めて'], form: '副詞、の形容詞', 意味: "for the first time" },
