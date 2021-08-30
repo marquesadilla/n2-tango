@@ -1,4 +1,4 @@
-const chapter2 = {
+const unit1_2 = {
     kaku: {
         れい: { 読み方: ['例'], form: '名詞', 意味: "example" },
         あさ: { 読み方: ['朝'], form: '名詞', 意味: "morning" },
@@ -73,4 +73,4 @@ const chapter2 = {
     },
 }
 
-export default chapter2;
+export default unit1_2;
