@@ -1,4 +1,24 @@
 const kanji = {
+    tango: {
+        // Chapter 1
+        初めて: { 読み方: ['はじめて'], form: '副詞、の形容詞', 意味: "for the first time" },
+        に対して: { 読み方: ['にたいして'], form: '表現', 意味: "towards~; against~" },
+        行動する: { 読み方: ['こうどうする'], form: 'スル動詞', 意味: "to take action; behavior" },
+        選ぶ: { 読み方: ['えらぶ'], form: '五段動詞、他動詞', 意味: "to choose; to select" },
+        ウインクする: { 読み方: [''], form: 'スル動詞', 意味: "To wink" },
+        握手する: { 読み方: ['あくしゅ（を）する'], form: 'スル動詞', 意味: "to handshake" },
+        軽い: { 読み方: ['かるい'], form: 'ィ形容詞', 意味: "light" },
+        頬: { 読み方: ['ほお／ほほ'], form: '名詞', 意味: "cheek" },
+        おじぎする: { 読み方: [''], form: 'スル動詞', 意味: "to bow" },
+        ハグする: { 読み方: [''], form: 'スル動詞', 意味: "to hug" },
+        両手: { 読み方: ['りょうて'], form: '名詞', 意味: "both hands" },
+        合わせる: { 読み方: ['あわせる'], form: '一段動詞い、他動詞', 意味: "to put together" },
+        拝む: { 読み方: ['おがむ'], form: '五段動詞、他動詞', 意味: "to pray" },
+        抵抗する: { 読み方: ['ていこう'], form: '名詞、スル動詞', 意味: "resistance; reluctance" },
+        感じる: { 読み方: ['かんじる'], form: '一段動詞', 意味: "to feel" },
+        必ず: { 読み方: ['かならず'], form: '副詞', 意味: "without fail; certainly" },
+        //: { 読み方: [''], form: '', 意味: "" },
+    },
     kaku: {
         // Chapter 1
         はじめて: { 読み方: ['初めて'], form: '副詞、の形容詞', 意味: "for the first time" },

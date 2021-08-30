@@ -22,11 +22,41 @@ class Yomu extends React.Component {
         const params = new URLSearchParams(props.location.serach);
         var test = props.location.search;
         console.log(test);
-        if (test==='?set=kanji-yomerebaii'){
+        if (test==='?set=tango'){
+            this.state={
+                characters: Object.keys(kanji.tango),
+                set: "tango",
+                setName: "単語",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            }
+        }
+        else if (test==='?set=kanji-yomerebaii'){
             this.state={
                 characters: Object.keys(kanji.yomerebaii),
                 set: "yomu",
                 setName: "読めればいい漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            }
+        }
+        else if (test==='?set=kanji-kaku'){
+            this.state={
+                characters: Object.keys(kanji.kaku),
+                set: "kaku",
+                setName: "書くのを覚える漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -478,6 +508,9 @@ class Yomu extends React.Component {
             else if (set==="kaku") {
                 return kanji.kaku[characters[num]].読み方
             }
+            else if (set==="tango") {
+                return kanji.tango[characters[num]].読み方
+            }
         }
 
         const formSet = () => {
@@ -487,6 +520,9 @@ class Yomu extends React.Component {
             else if (set==="kaku") {
                 return kanji.kaku[characters[num]].form
             }
+            else if (set==="tango") {
+                return kanji.tango[characters[num]].form
+            }
         }
 
         const imiSet = () => {
@@ -495,6 +531,9 @@ class Yomu extends React.Component {
             }
             else if (set==="kaku") {
                 return kanji.kaku[characters[num]].意味
+            }
+            else if (set==="tango") {
+                return kanji.tango[characters[num]].意味
             }
         }
 
