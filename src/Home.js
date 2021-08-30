@@ -36,14 +36,9 @@ class Home extends React.Component {
                 </div>
                 
                 <div className="homeButtonContainer">
-                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="u1-tango-2" className="btn from-left">U1単語2</button></Link>
-                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="u1-kaku-2" className="btn from-left">U1_2書き漢字</button></Link>
-                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="u1-yomu-2" className="btn from-right">U1_2読み漢字</button></Link>
-                </div>
-
-                <div className="homeButtonContainer">
-                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="ch9-kaku" className="btn from-left">第九課書く</button></Link>
-                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="ch9-yomerebaii" className="btn from-left">第九課読む</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="u1-tango-2" className="btn from-left">U1単語2</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="u1-kaku-2" className="btn from-left">U1_2書き漢字</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="u1-yomu-2" className="btn from-right">U1_2読み漢字</button></Link>
                 </div>
 
             </React.Fragment>
