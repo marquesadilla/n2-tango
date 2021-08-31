@@ -3,13 +3,7 @@ import kanji from './kanji';
 import './kanji.css';
 import unit1_1 from './chapters/unit1_1';
 import unit1_2 from './chapters/unit1_2';
-import chapter3 from './chapters/chapter3';
-import chapter4 from './chapters/chapter4';
-import chapter5 from './chapters/chapter5';
-import chapter6 from './chapters/chapter6';
-import chapter7 from './chapters/chapter7';
-import chapter8 from './chapters/chapter8';
-import chapter9 from './chapters/chapter9';
+import unit2_1 from './chapters/unit2_1';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -38,7 +32,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(kanji.yomerebaii),
                 set: "yomu",
-                setName: "読めればいい漢字",
+                setName: "全ての読み漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -53,7 +47,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(kanji.kaku),
                 set: "kaku",
-                setName: "書くのを覚える漢字",
+                setName: "全ての書き漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",

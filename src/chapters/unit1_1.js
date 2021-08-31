@@ -66,14 +66,14 @@ const unit1_1 = {
         悲観的な: { 読み方: ['ひかんてき'], form: 'ナ形容詞', 意味: "pessimistic" },
         けちな: { 読み方: [''], form: 'ナ形容詞', 意味: "stingy" },
         頑固な: { 読み方: ['がんこ'], form: 'ナ形容詞', 意味: "stubborn; obstinate" },
-        恥ずかしがり屋: { 読み方: ['恥ずかしがり屋'], form: '名詞', 意味: "shy; easily embarassed" },
+        恥ずかしがり屋: { 読み方: ['はずかしがり屋'], form: '名詞', 意味: "shy; easily embarassed" },
     },
 
     kaku: {
 
         こうどう: { 読み方: ['行動'], form: '名詞、スル動詞', 意味: "action; behavior" },
         あいて: { 読み方: ['相手'], form: '名詞', 意味: "partner" },
-        かいしゃいん: { 読み方: ['かいしゃいん'], form: '名詞', 意味: "company employee; office worker" },
+        かいしゃいん: { 読み方: ['会社員'], form: '名詞', 意味: "company employee; office worker" },
         など: { 読み方: ['～等・（～とう）'], form: '接尾詞、助詞', 意味: "et cetera; the likes of; or something" },
         こじんてき: { 読み方: ['個人的'], form: 'ナ形容詞', 意味: "personal; private; individual" },
         じょうほう: { 読み方: ['情報'], form: '名詞', 意味: "information" },
