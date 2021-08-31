@@ -15,6 +15,7 @@ const Layout = (props) => {
             <div className = "container">
                 {props.children}
             </div>
+            <hr className="footerDivider"></hr>
             <footer>
                 <div className="footerContainer">
                     <a href="https://www.instagram.com/batoonworld/" rel="noreferrer" target="_blank" className="iconLink">
