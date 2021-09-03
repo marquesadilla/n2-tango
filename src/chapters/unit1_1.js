@@ -114,7 +114,7 @@ const unit1_1 = {
         職業: { 読み方: ['しょくぎょう'], form: '名詞', 意味: "occupation" },
         態度: { 読み方: ['たいど'], form: '名詞', 意味: "attitude" },
         恋人: { 読み方: ['こいびと'], form: '名詞', 意味: "lover" },
-        問いかけ: { 読み方: ['といかけ'], form: '名詞', 意味: "query; question" },
+        問い掛け: { 読み方: ['といかけ'], form: '名詞', 意味: "query; question" },
         即座: { 読み方: ['そくざ'], form: '名詞、副詞', 意味: "right there on the spot; immediately; right away" },
         挙げる: { 読み方: ['あげる'], form: '一段動詞、他動詞', 意味: "to raise; to elevate" },
         異なる: { 読み方: ['ことなる'], form: '五段動詞、自動詞', 意味: "to differ; to vary" },
