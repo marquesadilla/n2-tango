@@ -65,12 +65,32 @@ const unit1_2 = {
 
 
     kaku: {
-        
+        まど: { 読み方: ['窓'], form: '名詞', 意味: "window" },
+        くみあわせる: { 読み方: ['組み合わせる'], form: '一段動詞、他動詞', 意味: "to join together; to combine" },
+        にる: { 読み方: ['似る'], form: '一段動詞、自動詞', 意味: "to resemble; to be similar" },
+        くぎる: { 読み方: ['区切る'], form: '五段動詞、他動詞', 意味: "to divide (an area)" },
+        たとえば: { 読み方: ['例えば'], form: '副詞', 意味: "for example" },
+        ばあい: { 読み方: ['場合'], form: '名詞', 意味: "case; situation" },
+        おたがい: { 読み方: ['お互い'], form: '名詞、副詞', 意味: "each other; one another" },
+        あたえる: { 読み方: ['与える'], form: '一段動詞、他動詞', 意味: "to give (esp. to someone of lower status)" },
+        こうてき: { 読み方: ['公的'], form: 'ナ形容詞', 意味: "public" },
+        してき: { 読み方: ['私的'], form: 'ナ形容詞', 意味: "private" },
+        にんげん: { 読み方: ['人間'], form: '名詞', 意味: "human being" },
+        ばめん: { 読み方: ['場面'], form: '名詞', 意味: "scene; setting; place (where something happens)" },
+        ひつよう: { 読み方: ['必要'], form: 'ナ形容詞', 意味: "necessary" },
+        //: { 読み方: [''], form: '', 意味: "" },
     },
 
     yomerebaii: {
-
-
+        提案: { 読み方: ['ていあん'], form: '名詞、スル動詞', 意味: "to propose; suggestion" },
+        縦軸: { 読み方: ['たてじく'], form: '名詞', 意味: "vertical axis" },
+        横軸: { 読み方: ['よこじく'], form: '名詞', 意味: "horizontal axis" },
+        印象: { 読み方: ['いんしょう'], form: '名詞、スル動詞', 意味: "impression" },
+        発想: { 読み方: ['はっそう'], form: '名詞、スル動詞', 意味: "idea; conception" },
+        状況: { 読み方: ['じょうきょう'], form: '名詞', 意味: "situation; circumstances" },
+        分かち合う: { 読み方: ['わかちあう'], form: '五段動詞、他動詞', 意味: "to share" },
+        留める: { 読み方: ['(心に）とめる'], form: '一段動詞、他動詞', 意味: "to bear in mind" },
+        //: { 読み方: [''], form: '', 意味: "" },
         
     },
 }

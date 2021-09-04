@@ -118,6 +118,36 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
+        else if (test==='?set=u1-kaku-2') {
+            this.state = {
+                characters: Object.keys(unit1_2.kaku),
+                set: "kaku",
+                setName: "U1_2 書き方を覚える漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u1-yomu-2') {
+            this.state = {
+                characters: Object.keys(unit1_2.yomerebaii),
+                set: "yomu",
+                setName: "U1_2 読み方を覚える漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
 
     }
 
