@@ -187,7 +187,7 @@ const kanji = {
         へいき: { 読み方: ['平気'], form: 'ナ形容詞', 意味: "all right; fine; okay" },
         つくえ: { 読み方: ['机'], form: '名詞', 意味: "desk" },
         なぞ: { 読み方: ['謎'], form: '名詞', 意味: "mystery" },
-        解く: { 読み方: ['とく'], form: '五段動詞、他動詞', 意味: "to solve; to work out; to answer" },
+        とく: { 読み方: ['解く'], form: '五段動詞、他動詞', 意味: "to solve; to work out; to answer" },
         かって: { 読み方: ['勝手'], form: '名詞、ナ形容詞', 意味: "one's own convenience; one's way; selfishness" },
         ぜんいん: { 読み方: ['全員'], form: '名詞、副詞', 意味: "all members; whole crew; everyone" },
         きょうゆう: { 読み方: ['共有'], form: '名詞、スル動詞', 意味: "join ownership; sharing (e.g. a viewpoint; files)" },
