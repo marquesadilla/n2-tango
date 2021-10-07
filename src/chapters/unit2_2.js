@@ -47,7 +47,7 @@ const unit2_2 = {
         ようする: { 読み方: ['要する'], form: 'スル動詞、他動詞', 意味: "to need; to demand; to require" },
         つかれる: { 読み方: ['疲れる'], form: '一段動詞、自動詞', 意味: "to get tired; to tire; to get fatigued" },
         りせい: { 読み方: ['理性'], form: '名詞', 意味: "reasoning; (sense of) reason" },
-        えきいん: { 読み方: ['えきいん'], form: '名詞', 意味: "(train) station staff/employee" },
+        えきいん: { 読み方: ['駅員'], form: '名詞', 意味: "(train) station staff/employee" },
         かてい: { 読み方: ['家庭'], form: '名詞', 意味: "home; family; household" },
         きがえる: { 読み方: ['着替える'], form: '一段動詞', 意味: "to change one's clothes" },
         じっこう: { 読み方: ['実行'], form: '名詞、スル動詞', 意味: "execution (e.g. of a plan); carrying out" },
