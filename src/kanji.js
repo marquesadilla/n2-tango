@@ -357,6 +357,25 @@ const kanji = {
         こごえ: { 読み方: ['小声'], form: '名詞、ノ形容詞', 意味: "low voice; whisper" },
         こしつ: { 読み方: ['個室'], form: '名詞', 意味: "private room; single room" },
         あんぜん: { 読み方: ['安全'], form: 'ナ形容詞', 意味: "safety;security" },
+
+        // Unit 3_1
+        ちきゅう: { 読み方: ['地球'], form: '名詞', 意味: "Earth; the globe" },
+        おんだんか: { 読み方: ['温暖化'], form: '名詞、スル動詞', 意味: "warming" },
+        りよう: { 読み方: ['利用'], form: '名詞、スル動詞', 意味: "use; utilization" },
+        ふろ: { 読み方: ['風呂'], form: '名詞', 意味: "bath" },
+        にゅうよく: { 読み方: ['入浴'], form: '名詞、スル動詞', 意味: "bathing; to take a bath; to enter a bath" },
+        ほおん: { 読み方: ['保温'], form: '名詞、スル動詞', 意味: "retaining heat; heat insulation" },
+        つめこむ: { 読み方: ['詰め込む'], form: '五段動詞、他動詞', 意味: "to cram; to stuff; to pack" },
+        てきせつ: { 読み方: ['適切'], form: 'ナ形容詞', 意味: "appropriate; suitable" },
+        せつやく: { 読み方: ['節約'], form: '名詞、スル動詞', 意味: "economising; saving" },
+        かんきょう: { 読み方: ['環境'], form: '名詞', 意味: "environment" },
+        ぼうし: { 読み方: ['防止'], form: '名詞、スル動詞', 意味: "prevention" },
+        かつどう: { 読み方: ['活動'], form: '名詞、スル動詞', 意味: "activity" },
+        ちょうせつ: { 読み方: ['調節'], form: '名詞、スル動詞', 意味: "regulation; adjustment; control" },
+        せっち: { 読み方: ['設置'], form: '名詞、スル動詞', 意味: "installation" },
+        でんきゅう: { 読み方: ['電球'], form: '名詞', 意味: "light bulb" },
+        かでんせいひん: { 読み方: ['家電製品'], form: '名詞', 意味: "consumer electronics; home appliances" },
+
         // : { 読み方: [''], form: '', 意味: "" },
     },
 
@@ -422,6 +441,25 @@ const kanji = {
         携帯電話: { 読み方: ['けいたいでんわ'], form: '名詞', 意味: "cellular phone" },
         保つ: { 読み方: ['たもつ'], form: '五段動詞、他動詞', 意味: "to keep; to preserve; to maintain" },
         光景: { 読み方: ['こうけい'], form: '名詞', 意味: "scene; spectacle; sight; view" },
+
+        // Unit 3_1
+        排出量: { 読み方: ['はいしゅつりょう'], form: '名詞', 意味: "amount of emission" },
+        二酸化炭素: { 読み方: ['にさんかたんそ'], form: '名詞', 意味: "carbon dioxide" },
+        冷房: { 読み方: ['れいぼう'], form: '名詞、スル動詞', 意味: "air conditioning; air cooling" },
+        暖房: { 読み方: ['だんぼう'], form: '名詞、スル動詞', 意味: "(indoor) heating" },
+        洗濯: { 読み方: ['せんたく'], form: '名詞、スル動詞', 意味: "laundry" },
+        冷蔵庫: { 読み方: ['れいぞうこ'], form: '名詞', 意味: "refrigerator" },
+        削減: { 読み方: ['さくげん'], form: '名詞、スル動詞', 意味: "reduction" },
+        間隔: { 読み方: ['かんかく'], form: '名詞', 意味: "space; interval" },
+        炎: { 読み方: ['ほのお'], form: '名詞', 意味: "fire; flame" },
+        設定温度: { 読み方: ['せっていおんど'], form: '名詞', 意味: "preset temperature" },
+        推進: { 読み方: ['すいしん'], form: '名詞、スル動詞', 意味: "promotion; propulsion" },
+        購入: { 読み方: ['こうにゅう'], form: '名詞、スル動詞', 意味: "purchase; buy" },
+        洗剤: { 読み方: ['せんざい'], form: '名詞', 意味: "detergent" },
+        燃費: { 読み方: ['ねんぴ'], form: '名詞', 意味: "fuel consumption; gas mileage" },
+        鉄道: { 読み方: ['てつどう'], form: '名詞', 意味: "rail; railroad" },
+        参考: { 読み方: ['さんこう'], form: '名詞', 意味: "reference" },
+
         // : { 読み方: [''], form: '', 意味: "" },
     }
 }
