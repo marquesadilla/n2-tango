@@ -61,7 +61,7 @@ const unit3_1 = {
         防止: { 読み方: ['ぼうし'], form: '名詞、スル動詞', 意味: "prevention" },
         原則: { 読み方: ['げんそく'], form: '名詞', 意味: "general rule; principle" },
         包装: { 読み方: ['ほうそう'], form: '名詞、スル動詞', 意味: "package; wrapping" },
-        詰め替える: { 読み方: ['詰め替える'], form: '一段動詞、他動詞', 意味: "to repack; to refill" },
+        詰め替える: { 読み方: ['つめかえる'], form: '一段動詞、他動詞', 意味: "to repack; to refill" },
         電球型蛍光ランプ: { 読み方: ['でんきゅうがたけいこうランプ'], form: '名詞', 意味: "compact fluorescent lamp (CFL)" },
         エネルギー効率: { 読み方: ['エネルギーこうりつ'], form: '名詞', 意味: "energy efficiency" },
         燃費: { 読み方: ['ねんぴ'], form: '名詞', 意味: "fuel consumption; gas mileage" },
