@@ -6,6 +6,7 @@ import unit1_2 from './chapters/unit1_2';
 import unit2_1 from './chapters/unit2_1';
 import unit2_2 from './chapters/unit2_2';
 import unit3_1 from './chapters/unit3_1';
+import unit3_2 from './chapters/unit3_2';
 
 class Yomu extends React.Component {
     constructor(props) {
@@ -275,6 +276,51 @@ class Yomu extends React.Component {
                 characters: Object.keys(unit3_1.yomerebaii),
                 set: "yomu",
                 setName: "U3_1 読み方を覚える漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u3-tango-2'){
+            this.state={
+                characters: Object.keys(unit3_2.tango),
+                set: "tango",
+                setName: "U3 単語 2",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u3-kaku-2') {
+            this.state = {
+                characters: Object.keys(unit3_2.kaku),
+                set: "kaku",
+                setName: "U3_2 書き方を覚える漢字",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u3-yomu-2') {
+            this.state = {
+                characters: Object.keys(unit3_2.yomerebaii),
+                set: "yomu",
+                setName: "U3_2 読み方を覚える漢字",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
