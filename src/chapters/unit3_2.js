@@ -102,6 +102,7 @@ const unit3_2 = {
         生活費: { 読み方: ['せいかつひ'], form: '名詞', 意味: "living expenses" },
         市民: { 読み方: ['しみん'], form: '名詞', 意味: "citizen" },
     },
+    
 }
 
 export default unit3_2;
