@@ -348,11 +348,11 @@ class Yomu extends React.Component {
                 nextDis: false,
             };
         }
-        else if (test==='?set=u3-tango-1'){
+        else if (test==='?set=u4-tango-1'){
             this.state={
-                characters: Object.keys(unit3_1.tango),
+                characters: Object.keys(unit4_1.tango),
                 set: "tango",
-                setName: "U3 単語 1",
+                setName: "U4 単語 1",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
