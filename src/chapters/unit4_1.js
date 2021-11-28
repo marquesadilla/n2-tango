@@ -45,11 +45,31 @@ const unit4_1 = {
     },
 
     kaku: {
-        
+        うら: { 読み方: ['裏'], form: '名詞', 意味: "opposite side; other side; reverse side" },
+        つま: { 読み方: ['妻'], form: '名詞', 意味: "wife" },
+        ふる: { 読み方: ['振る'], form: '五段動詞、他動詞', 意味: "to shake; to wave; to swing; to turn down (someone); to reject" },
+        だん: { 読み方: ['段'], form: '名詞', 意味: "step; stair; (flight of) steps" },
+        いた: { 読み方: ['板'], form: '名詞', 意味: "board; plank" },
+        まい: { 読み方: ['枚'], form: '助数詞', 意味: "counter for flat objects (e.g. sheets of paper)" },
+        てらす: { 読み方: ['照らす'], form: '五段動詞、他動詞', 意味: "to shine on; to illuminate" },
+        ねむる: { 読み方: ['眠る'], form: '五段動詞、自動詞', 意味: "to sleep" },
+        きみがわるい: { 読み方: ['君が悪い'], form: '表現、イ形容詞', 意味: "creepy (feeling); uneasy (feeling); scary" },
+        しんちょう: { 読み方: ['身長'], form: '名詞', 意味: "(one's) height; stature" },
+        やね: { 読み方: ['屋根'], form: '名詞', 意味: "roof" },
+        こおり: { 読み方: ['氷'], form: '名詞', 意味: "ice" },
+        もどる: { 読み方: ['戻る'], form: '五段動詞、自動詞', 意味: "to return; to turn back; to rebound; to spring back" },
+        もどす: { 読み方: ['戻す'], form: '五段動詞、他動詞', 意味: "to put back; to return; to give back; to restore (to a previous state)" },
     },
 
     yomerebaii: {
-
+        正月: { 読み方: ['しょうがつ'], form: '名詞', 意味: "New Year (esp. first three days); first month of the year; Japanese New Year" },
+        元旦: { 読み方: ['がんたん'], form: '名詞', 意味: "New Year's Day; New Year's morning" },
+        不機嫌: { 読み方: ['ふきげん'], form: 'ナ形容詞', 意味: "bad mood; cranky; grumpy" },
+        押し入れ: { 読み方: ['おしいれ'], form: '名詞', 意味: "(Japanese) closet" },
+        怒鳴る: { 読み方: ['どなる'], form: '五段動詞、自動詞', 意味: "to shout (in anger); to yell" },
+        姿: { 読み方: ['すがた'], form: '名詞', 意味: "shape; form" },
+        認める: { 読み方: ['みとめる'], form: '一段動詞、他動詞', 意味: "to recognize; to notice; to approve; to accept" },
+        硬い: { 読み方: ['かたい'], form: 'ィ形容詞', 意味: "hard; solid; obstinate" },
     },
 }
 
