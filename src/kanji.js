@@ -381,7 +381,7 @@ const kanji = {
         板: { 読み方: ['いた'], form: '名詞', 意味: "board; plank" },
         どかす: { 読み方: [''], form: '五段動詞、他動詞', 意味: "to remove; to move out of the way" },
         明かり: { 読み方: ['あかり'], form: '名詞', 意味: "light; illumination; glow; gleam; lamp" },
-        ぐるりと: { 読み方: [''], form: '副詞', 意味: "around~; approximately~" },
+        ぐるりと: { 読み方: [''], form: '副詞', 意味: "around; surrounding; turning around; going around" },
         照らす: { 読み方: ['てらす'], form: '五段動詞、他動詞', 意味: "to shine on; to illuminate" },
         怒鳴る: { 読み方: ['どなる'], form: '五段動詞、自動詞', 意味: "to shout (in anger); to yell" },
         ちゃんと: { 読み方: [''], form: '副詞', 意味: "neatly; regularly; properly; without failt; diligently" },
