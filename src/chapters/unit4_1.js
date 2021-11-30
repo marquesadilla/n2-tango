@@ -53,7 +53,7 @@ const unit4_1 = {
         まい: { 読み方: ['枚'], form: '助数詞', 意味: "counter for flat objects (e.g. sheets of paper)" },
         てらす: { 読み方: ['照らす'], form: '五段動詞、他動詞', 意味: "to shine on; to illuminate" },
         ねむる: { 読み方: ['眠る'], form: '五段動詞、自動詞', 意味: "to sleep" },
-        きみがわるい: { 読み方: ['君が悪い'], form: '表現、イ形容詞', 意味: "creepy (feeling); uneasy (feeling); scary" },
+        きみがわるい: { 読み方: ['君味が悪い'], form: '表現、イ形容詞', 意味: "creepy (feeling); uneasy (feeling); scary" },
         しんちょう: { 読み方: ['身長'], form: '名詞', 意味: "(one's) height; stature" },
         やね: { 読み方: ['屋根'], form: '名詞', 意味: "roof" },
         こおり: { 読み方: ['氷'], form: '名詞', 意味: "ice" },

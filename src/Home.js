@@ -89,7 +89,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="homeButtonContainer">
-                    <Link to={`/kanji?set=${kanjiSetClick}`}><button disabled onClick={this.clickedKanjiSet} value="u4-tango-2-sankou" className="btn from-left">U4参考にする単語2</button></Link>
+                    <Link to={`/kanji?set=${kanjiSetClick}`}><button onClick={this.clickedKanjiSet} value="u4-tango-2-sankou" className="btn from-left">U4参考にする単語2</button></Link>
                 </div>
 
                 
