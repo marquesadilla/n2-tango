@@ -10,7 +10,7 @@ const Layout = (props) => {
     return  (
         <React.Fragment>
             <nav>
-                <Link to="/"><span className="nav-header"><h1>日本語401</h1></span></Link>
+                <Link to="/"><span className="nav-header"><h1>N2単語</h1></span></Link>
             </nav>
             <div className = "container">
                 {props.children}
@@ -24,11 +24,11 @@ const Layout = (props) => {
                     <a href="https://twitter.com/batoonworld" rel="noreferrer" target="_blank" className="iconLink">
                         <FontAwesomeIcon icon={['fab', 'twitter']} />
                     </a>
-                    <a href="https://www.github.com/MBatoon1996" rel="noreferrer" target="_blank" className="iconLink">
+                    <a href="https://github.com/marquesadilla" rel="noreferrer" target="_blank" className="iconLink">
                         <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
                 </div>
-                <p className="text-center">©2021 Marques Batoon</p>
+                <p className="text-center">©2023 Marques Batoon</p>
             </footer>
         </React.Fragment>
     );
