@@ -39,7 +39,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(unit1_1.tango),
                 set: "tango",
-                setName: "U1 単語 1",
+                setName: "第一章・家族",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -54,7 +54,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(unit1_2.tango),
                 set: "tango",
-                setName: "U1 単語 2",
+                setName: "第一章・友達",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",

@@ -1,4 +1,4 @@
-const unit1_2 = {
+const unit1 = {
     tango: {
         //: { 読み方: [''], form: '', 意味: "" },
 
@@ -7,4 +7,4 @@ const unit1_2 = {
     
 }
 
-export default unit1_2;
+export default unit1;
