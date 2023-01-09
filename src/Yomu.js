@@ -39,7 +39,7 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(unit1_1.tango),
                 set: "tango",
-                setName: "第一章・家族",
+                setName: "第一章：家族",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
@@ -54,7 +54,22 @@ class Yomu extends React.Component {
             this.state={
                 characters: Object.keys(unit1_2.tango),
                 set: "tango",
-                setName: "第一章・友達",
+                setName: "第一章：友達",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u1-tango-3'){
+            this.state={
+                characters: Object.keys(unit1_2.tango),
+                set: "tango",
+                setName: "第一章：知人・付き合い",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",
