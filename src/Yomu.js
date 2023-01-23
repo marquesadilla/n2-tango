@@ -1,8 +1,12 @@
 import React from 'react';
 import kanji from './kanji';
 import './kanji.css';
+import unit1 from './chapters/unit1';
 import unit1_1 from './chapters/unit1_1';
 import unit1_2 from './chapters/unit1_2';
+import unit1_3 from './chapters/unit1_3';
+import unit1_4 from './chapters/unit1_4';
+import unit1_5 from'./chapters/unit1_5';
 import unit2_1 from './chapters/unit2_1';
 import unit2_2 from './chapters/unit2_2';
 import unit3_1 from './chapters/unit3_1';
