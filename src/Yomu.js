@@ -39,6 +39,21 @@ class Yomu extends React.Component {
                 nextDis: false,
             }
         }
+        else if (test==='?set=u1-tango'){
+            this.state={
+                characters: Object.keys(unit1.tango),
+                set: "tango",
+                setName: "第一章：家族",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            }
+        }
         else if (test==='?set=u1-tango-1'){
             this.state={
                 characters: Object.keys(unit1_1.tango),
@@ -71,9 +86,24 @@ class Yomu extends React.Component {
         }
         else if (test==='?set=u1-tango-3'){
             this.state={
-                characters: Object.keys(unit1_2.tango),
+                characters: Object.keys(unit1_3.tango),
                 set: "tango",
                 setName: "第一章：知人・付き合い",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u1-tango-4'){
+            this.state={
+                characters: Object.keys(unit1_4.tango),
+                set: "tango",
+                setName: "第一章：恋人",
                 num: 0,
                 shuffleHide: "",
                 yomikataButton: "",

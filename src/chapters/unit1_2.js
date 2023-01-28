@@ -1,7 +1,7 @@
 const unit1_2 = {
     tango: {
         友人: { 読み方: ['ゆうじん'], form: '名詞', 意味: "friend" },
-        仲仲: { 読み方: ['なか'], form: '名詞', 意味: "relationship" },
+        仲: { 読み方: ['なか'], form: '名詞', 意味: "relationship" },
         縁: { 読み方: ['えん'], form: '名詞', 意味: "fate; destiny (esp. as a mysterious force that binds two people together" },
         ニックネーム: { 読み方: [''], form: '名詞', 意味: "nickname" },
         大半: { 読み方: ['たいはん'], form: '名詞', 意味: "majority; most (of)" },

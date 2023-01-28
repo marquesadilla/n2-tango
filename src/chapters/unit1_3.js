@@ -3,7 +3,7 @@ const unit1_3 = {
         初対面: { 読み方: ['しょたいめん'], form: '名詞', 意味: "first meeting" },
         自己紹介: { 読み方: ['じこしょうかい'], form: '名詞、する動詞、自動詞', 意味: "self-introduction" },
         おじぎ: { 読み方: [''], form: '名詞、する動詞、自動詞', 意味: "bow" },
-        近所付き合い: { 読み方: ['きんじょ付き合い'], form: '名詞、する動詞', 意味: "interaction with neighbors" },
+        近所付き合い: { 読み方: ['きんじょづきあい'], form: '名詞、する動詞', 意味: "interaction with neighbors" },
         大家: { 読み方: ['おおや'], form: '名詞', 意味: "landlord; landlady" },
         飼い主: { 読み方: ['かいぬし'], form: '名詞', 意味: "(pet) owner" },
         交わす: { 読み方: ['かわす'], form: '五段動詞、他動詞', 意味: "to exchange (messages, greetings, arguments, etc.)" },
