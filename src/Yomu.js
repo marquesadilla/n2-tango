@@ -6,7 +6,7 @@ import unit1_1 from './chapters/unit1_1';
 import unit1_2 from './chapters/unit1_2';
 import unit1_3 from './chapters/unit1_3';
 import unit1_4 from './chapters/unit1_4';
-import unit1_5 from'./chapters/unit1_5';
+import unit1_5 from './chapters/unit1_5';
 import unit2_1 from './chapters/unit2_1';
 import unit2_2 from './chapters/unit2_2';
 import unit3_1 from './chapters/unit3_1';
@@ -102,6 +102,21 @@ class Yomu extends React.Component {
         else if (test==='?set=u1-tango-4'){
             this.state={
                 characters: Object.keys(unit1_4.tango),
+                set: "tango",
+                setName: "第一章：恋人",
+                num: 0,
+                shuffleHide: "",
+                yomikataButton: "",
+                yomikataClass: "d-none",
+                imiButton: "",
+                imiClass: "d-none imi",
+                prevDis: true,
+                nextDis: false,
+            };
+        }
+        else if (test==='?set=u1-tango-5'){
+            this.state={
+                characters: Object.keys(unit1_5.tango),
                 set: "tango",
                 setName: "第一章：恋人",
                 num: 0,
